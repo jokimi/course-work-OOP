@@ -1,0 +1,32 @@
+﻿<Window x:Class="BelAirWays.View.UserView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BelAirWays.View"
+        mc:Ignorable="d"
+        Title="BelAirWays - User" Height="500" Width="1000" Closing="Window_Closing" MaxWidth="1000" MaxHeight="500" MinHeight="450" MinWidth="1000"
+        Cursor="D:\BSTU\Projects\ООП\BelAirWays\BelAirWays\Img/pointer.cur"
+        Icon="D:\BSTU\Projects\ООП\BelAirWays\BelAirWays\Img/belairways.ico"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="D:\BSTU\Projects\ООП\BelAirWays\BelAirWays\Img/reg4.jpg"></ImageBrush>
+        </Grid.Background>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel  HorizontalAlignment="Left" Background="#FF092C52">
+                <Button Content="Рейсы" Style="{DynamicResource AllAdminButton}" Command="{Binding LookAllFlights}"/>
+                <Button Content="История" Style="{DynamicResource AllAdminButton}" Command="{Binding LookHistory}"/>
+                <Button Content="Сменить пароль" Style="{DynamicResource AllAdminButton}" Command="{Binding ChangePassword}"/>
+                <Button Content="Выйти" Style="{DynamicResource AllAdminButton}"  Command = "{Binding Exit}"/>
+            </StackPanel>
+
+            <Frame Width="830" 
+                   Content="{Binding SelectPage}"
+                   NavigationUIVisibility="Hidden"
+                   Opacity="{Binding FrameOpacity}"
+                   />
+        </StackPanel>
+
+    </Grid>
+</Window>

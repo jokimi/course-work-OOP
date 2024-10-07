@@ -1,0 +1,22 @@
+﻿<Page x:Class="BelAirWays.Pages.AddAircraft"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BelAirWays.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddAircraftForm">
+
+    <Grid Margin="201.5 59.5">
+        <Border CornerRadius="20" BorderBrush="White" BorderThickness="1" Panel.ZIndex="2" Background="White">
+            <StackPanel Style="{DynamicResource Panel}" DataContext="{Binding Models}" Panel.ZIndex="1" Background="{x:Null}">
+                <TextBlock Style="{DynamicResource AddAircrafttWord}" Width="300"><Run Text="Добавление самолета"/></TextBlock>
+            <TextBox Style="{DynamicResource NameAircraft}" Text="{Binding name_aircraft, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Style="{DynamicResource CountOfSeats}" Text="{Binding count_of_seats, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Style="{DynamicResource Speed}" Text="{Binding speed, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+            </Border>
+        <Button Style="{DynamicResource AddAircraft}" Command="{Binding AddAircraft}" Panel.ZIndex="3"/>
+    </Grid>
+</Page>

@@ -1,0 +1,75 @@
+﻿<Page x:Class="BelAirWays.Pages.AddFlightsForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BelAirWays.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddFlightsForm">
+
+    <Grid Margin="110 35">
+        <TextBlock Style="{DynamicResource AddFlightWord}" Panel.ZIndex="5" Margin="173,16,173,0" HorizontalAlignment="Stretch" VerticalAlignment="Top"/>
+        <Border CornerRadius="20 0 0 20" BorderBrush="White" BorderThickness="1" Panel.ZIndex="2" Background="White" Width="300" HorizontalAlignment="Left">
+            <StackPanel DataContext="{Binding Models}" Panel.ZIndex="1" Background="{x:Null}">
+                <TextBlock HorizontalAlignment="Center" Margin="0 55 0 0" Foreground="#1d89e4" FontFamily="Trebuchet MS">Дата отправления</TextBlock>
+                <Border Width="250" Height="40" CornerRadius="10" BorderBrush="#d7ecfd" BorderThickness="2" Background="#fff" Margin="0 5 0 0">
+                    <DatePicker BorderBrush="#d7ecfd" Style="{DynamicResource CustomDatePicker}" IsDropDownOpen="False" SelectedDateFormat="Short" Margin="9,0,9,0" SelectedDate="{Binding date_from, StringFormat='yyyy-MM-dd'}" Background="#00000000"/>
+                </Border>
+                <TextBlock HorizontalAlignment="Center" Margin="0 15 0 0" Foreground="#1d89e4" FontFamily="Trebuchet MS">Дата прибытия</TextBlock>
+                <Border Width="250" Height="40" CornerRadius="10" BorderBrush="#d7ecfd" BorderThickness="2" Background="#fff" Margin="0 5 0 0">
+                    <DatePicker BorderBrush="#d7ecfd" Style="{DynamicResource CustomDatePicker}" IsDropDownOpen="False" SelectedDateFormat="Short" Margin="9,0,9,0" SelectedDate="{Binding date_to}"/>
+                </Border>
+                <TextBlock HorizontalAlignment="Center" Margin="0 15 0 0" Foreground="#1d89e4" FontFamily="Trebuchet MS">Класс</TextBlock>
+                <Border Width="250" Height="40" CornerRadius="10" BorderBrush="#d7ecfd" BorderThickness="2" Background="#fff" Margin="0 5 0 0">
+                    <ComboBox Style="{DynamicResource FlightComboBox}" Width="230" ItemsSource="{Binding Classes}" SelectedItem="{Binding SelectedClass}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding clas}"/>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </Border>
+            </StackPanel>
+        </Border>
+        <Border CornerRadius="0 20 20 0" BorderBrush="White" BorderThickness="1" Panel.ZIndex="2" Background="White" Width="300" HorizontalAlignment="Right">
+            <StackPanel DataContext="{Binding Models}" Panel.ZIndex="1" Background="{x:Null}">
+                <TextBlock HorizontalAlignment="Center" Margin="0 55 0 0" Foreground="#1d89e4" FontFamily="Trebuchet MS">Компания</TextBlock>
+                <Border Width="250" Height="40" CornerRadius="10" BorderBrush="#d7ecfd" BorderThickness="2" Panel.ZIndex="2" Background="Transparent" Margin="0 5 0 0">
+                    <ComboBox Style="{DynamicResource FlightComboBox}" Width="230" ItemsSource="{Binding Company}" SelectedIndex="0" SelectedItem="{Binding SelectedCompany}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding company_name}"/>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </Border>
+                <TextBlock HorizontalAlignment="Center" Margin="0 15 0 0" Foreground="#1d89e4" FontFamily="Trebuchet MS">Маршрут</TextBlock>
+                <Border Width="250" Height="40" CornerRadius="10" BorderBrush="#d7ecfd" BorderThickness="2" Panel.ZIndex="2" Background="Transparent" Margin="0 5 0 0">
+                    <ComboBox Style="{DynamicResource FlightComboBox}" Width="230" ItemsSource="{Binding Routs}" SelectedIndex="0" SelectedItem="{Binding SelectedRouts}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding airport_From_To}"/>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </Border>
+                <TextBlock HorizontalAlignment="Center" Margin="0 15 0 0" Foreground="#1d89e4" FontFamily="Trebuchet MS">Самолет</TextBlock>
+                <Border Width="250" Height="40" CornerRadius="10" BorderBrush="#d7ecfd" BorderThickness="2" Panel.ZIndex="2" Background="Transparent" Margin="0 5 0 0">
+                    <ComboBox Style="{DynamicResource FlightComboBox}" Width="230" ItemsSource="{Binding Aircrafts}" SelectedItem="{Binding SelectedAircraft}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding name_aircraft}"/>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </Border>
+            </StackPanel>
+        </Border>
+        <Button Style="{DynamicResource AddFlight}" Command="{Binding AddFlights}" Panel.ZIndex="3"/>
+        <Button Width="20" Height="20" FontSize="8" Style="{DynamicResource DeleteRoute}" Command="{Binding DeleteRoute}" Panel.ZIndex="3" Margin="508,0,0,163" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <Button Width="20" Height="20" FontSize="8" Style="{DynamicResource DeleteRoute}" Command="{Binding DeleteCompany}" Panel.ZIndex="3" Margin="508,0,0,237" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <Button Width="20" Height="20" FontSize="8" Style="{DynamicResource DeleteRoute}" Command="{Binding DeleteAircraft}" Panel.ZIndex="3" Margin="508,0,0,89" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Page>

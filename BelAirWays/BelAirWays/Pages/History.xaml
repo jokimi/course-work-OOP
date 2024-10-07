@@ -1,0 +1,105 @@
+﻿<Page x:Class="BelAirWays.Pages.History"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BelAirWays.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="History">
+
+    <Grid>
+        <Button Style="{DynamicResource DeleteRoute}" Command = "{Binding Reload}" Content="🔄" Width="40" Height="40" FontSize="15" Panel.ZIndex="3" Margin="781,0,0,410" VerticalAlignment="Bottom" HorizontalAlignment="Left" RenderTransformOrigin="0.188,0.543"/>
+        <StackPanel DataContext="{Binding Models}">
+            <Border Margin="5 80 5 0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Border Width="700" Background="Transparent" BorderBrush="Transparent">
+                        <ScrollViewer Height="300">
+                            <ListView Grid.Row="1" x:Name="flightList" Background="Transparent" BorderBrush="Transparent">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border CornerRadius="20">
+                                            <Border.Style>
+                                                <Style TargetType="Border">
+                                                    <Setter Property="Background" Value="white" />
+                                                    <Style.Triggers>
+                                                        <Trigger Property="IsMouseOver" Value="True">
+                                                            <Setter Property="Background" Value="#d7ecfd" />
+                                                        </Trigger>
+                                                        <Trigger Property="IsFocused" Value="True">
+                                                            <Setter Property="Background" Value="#d7ecfd" />
+                                                        </Trigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Border.Style>
+                                            <Grid Width="668" Margin="0 5 0 5">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto"></RowDefinition>
+                                                    <RowDefinition Height="Auto"></RowDefinition>
+                                                </Grid.RowDefinitions>
+                                                <StackPanel Orientation="Horizontal" Grid.Row="0">
+                                                    <TextBlock x:Name="tFrom" Foreground="#1d89e4" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="20 5 5 5" FontSize="20" Grid.Row="0" Text="{Binding TownFrom}" FontFamily="Trebuchet MS"></TextBlock>
+                                                    <TextBlock Foreground="#1d89e4" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="5 5" FontSize="20" Grid.Row="0" Text="→" FontFamily="Trebuchet MS"></TextBlock>
+                                                    <TextBlock x:Name="tTo" Foreground="#1d89e4" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="5 5" FontSize="20" Grid.Row="0" Text="{Binding TownTo}" FontFamily="Trebuchet MS"></TextBlock>
+                                                </StackPanel>
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Row="1">
+                                                    <TextBlock Foreground="#092C52" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="20 5 5 5" FontSize="15" Grid.Row="1" Text="Дата отправления:" FontFamily="Trebuchet MS"></TextBlock>
+                                                    <TextBlock x:Name="Date" Foreground="#092C52" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="0 5 5 5" FontSize="15" Grid.Row="1" Text="{Binding Date}" FontFamily="Trebuchet MS"></TextBlock>
+                                                </StackPanel>
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="1">
+                                                    <TextBlock x:Name="Comp" Foreground="#ddd" VerticalAlignment="Center" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Right" Margin="5 5 5 10" FontSize="15" Grid.Row="0" Text="{Binding Company}" FontFamily="Trebuchet MS"></TextBlock>
+                                                    <TextBlock Foreground="#ddd" VerticalAlignment="Center" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Right" Margin="5 5 5 10" FontSize="15" Grid.Row="0" Text="|" FontFamily="Trebuchet MS"></TextBlock>
+                                                    <TextBlock x:Name="Cl" Foreground="#ddd" VerticalAlignment="Center" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Right" Margin="5 5 0 10" FontSize="15" Grid.Row="0" Text="{Binding Clas}" FontFamily="Trebuchet MS"></TextBlock>
+                                                    <TextBlock Foreground="#ddd" VerticalAlignment="Center" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Right" Margin="0 5 20 10" FontSize="15" Grid.Row="0" Text="-класс" FontFamily="Trebuchet MS"></TextBlock>
+                                                </StackPanel>
+                                            </Grid>
+                                        </Border>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                                <ListView.ItemContainerStyle>
+                                    <Style TargetType="ListViewItem">
+                                        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+                                    </Style>
+                                </ListView.ItemContainerStyle>
+                            </ListView>
+                        </ScrollViewer>
+                    </Border>
+                </Grid>
+            </Border>
+            <!--<Grid Margin="20 80 20 0" Height="18" Background="WhiteSmoke"  VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Center" Grid.Column="0" Text="Дата вылета"/>
+                <TextBlock HorizontalAlignment="Center" Grid.Column="1" Text="От куда"/>
+                <TextBlock HorizontalAlignment="Center" Grid.Column="2" Text="Куда"/>
+                <TextBlock HorizontalAlignment="Center" Grid.Column="3" Text="Компания"/>
+                <TextBlock HorizontalAlignment="Center" Grid.Column="4" Text="Класс"/>
+            </Grid>
+            <DataGrid HeadersVisibility="None" CanUserAddRows="False" CanUserDeleteRows="False" Margin="5, 0, 5, 5" x:Name="dataGrid"  Grid.Column="1" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Date}"
+                                    Width="150" IsReadOnly="True"/>
+                    <DataGridTextColumn Binding="{Binding TownFrom}"
+                                    Width="150" IsReadOnly="True"/>
+                    <DataGridTextColumn Binding="{Binding TownTo}"
+                                    Width="150" IsReadOnly="True"/>
+                    <DataGridTextColumn Binding="{Binding Company}"
+                                    Width="150" IsReadOnly="True"/>
+                    <DataGridTextColumn Binding="{Binding Clas}"
+                                    Width="*" IsReadOnly="True"/>
+
+                </DataGrid.Columns>
+            </DataGrid>-->
+        </StackPanel>
+    </Grid>
+</Page>

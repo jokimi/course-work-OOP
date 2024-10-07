@@ -1,0 +1,23 @@
+﻿<Page x:Class="BelAirWays.Pages.AddAirportForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BelAirWays.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddAiraportForm">
+
+    <Grid Margin="201.5 59.5">
+        <Border CornerRadius="20" BorderBrush="White" BorderThickness="1" Panel.ZIndex="2" Background="White">
+            <StackPanel Style="{DynamicResource Panel}" DataContext="{Binding Models}" Panel.ZIndex="1" Background="{x:Null}">
+                <TextBlock Style="{DynamicResource AddAirportWord}" Width="300">Добавление аэропорта</TextBlock>
+                <TextBox Style="{DynamicResource NameAirport}" Text="{Binding nameAirport, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBox Style="{DynamicResource Country}" Text="{Binding country, UpdateSourceTrigger=PropertyChanged}" />
+                <TextBox Style="{DynamicResource Town2}" Text="{Binding town, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+        </Border>
+        <Button Style="{DynamicResource AddAirport}" Command="{Binding AddAirport}" Panel.ZIndex="3"/>
+            
+    </Grid>
+</Page>

@@ -1,0 +1,35 @@
+﻿<Window x:Class="BelAirWays.View.AdminView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BelAirWays.View"
+        mc:Ignorable="d"
+        Title="BelAirWays - Admin" Height="450" Width="970" Closing="Window_Closing" MaxWidth="960" MaxHeight="450" MinHeight="450" MinWidth="960"
+        Cursor="D:\BSTU\Projects\ООП\BelAirWays\BelAirWays\Img/pointer.cur"
+        Icon="D:\BSTU\Projects\ООП\BelAirWays\BelAirWays\Img/belairways.ico"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="D:\BSTU\Projects\ООП\BelAirWays\BelAirWays\Img/reg4.jpg"></ImageBrush>
+        </Grid.Background>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel HorizontalAlignment="Left" Background="#092C52" >
+                <Button Content="Добавить аэропорт" Style="{DynamicResource AllAdminButton}" Command="{Binding AddAiraport}"/>
+                <Button Content="Добавить самолет" Style="{DynamicResource AllAdminButton}" Command="{Binding AddAircraft}"/>
+                <Button Content="Добавить компанию" Style="{DynamicResource AllAdminButton}" Command="{Binding AddCompany}"/>
+                <Button Content="Добавить маршрут" Style="{DynamicResource AllAdminButton}" Command="{Binding AddRoute}"/>
+                <Button Content="Добавить рейс" Style="{DynamicResource AllAdminButton}" Command="{Binding AddFlights}"/>
+                <Button Content="Заказы" Style="{DynamicResource AllAdminButton}" Command="{Binding LookAllOrders}"/>
+                <Button Content="Рейсы" Style="{DynamicResource AllAdminButton}" Command="{Binding LookAllFlights}"/>
+                <Button Content="Выйти" Style="{DynamicResource AllAdminButton}" Command = "{Binding Exit }" />
+
+            </StackPanel>
+            <Frame Width="800" 
+                   Content="{Binding SelectPage}"
+                   NavigationUIVisibility="Hidden"
+                   Opacity="{Binding FrameOpacity}"
+                   />
+        </StackPanel>
+    </Grid>
+</Window>

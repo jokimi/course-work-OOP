@@ -1,0 +1,140 @@
+﻿<Page x:Class="BelAirWays.Pages.AllFlights"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="800"
+      Title="AllFlights">
+
+    <Grid>
+        <Button Style="{DynamicResource ByeTicket}" Command="{Binding BuyTicket}" Panel.ZIndex="3" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Style="{DynamicResource Search}" Content="🔍" Command="{Binding Search}" Panel.ZIndex="3" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Style="{DynamicResource ResetFilters}" Command="{Binding Reset}" Panel.ZIndex="3" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <StackPanel DataContext="{Binding Models}">
+            <StackPanel Orientation="Vertical" Width="180" Height="500" HorizontalAlignment="Right" Background="white">
+                <TextBox Panel.ZIndex="2" Style="{DynamicResource Name}" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBox Panel.ZIndex="2" Style="{DynamicResource LastName}"  Text="{Binding SurName, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBox Style="{DynamicResource Document}" Text="{Binding Document, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock HorizontalAlignment="Center" Margin="0 50 0 0" Foreground="#1d89e4" FontFamily="Trebuchet MS"><Run Text="Дата отправления"/></TextBlock>
+                <Border Width="150" Height="40" CornerRadius="10" BorderBrush="#d7ecfd" BorderThickness="2" Background="#fff" Margin="0 5 0 0">
+                    <DatePicker BorderBrush="#d7ecfd" Style="{DynamicResource CustomDatePicker}" IsDropDownOpen="False" SelectedDateFormat="Short" Margin="9,0,9,0" SelectedDate="{Binding SearchDate, StringFormat=yyyy-MM-dd}" Background="#00000000"/>
+                </Border>
+                <TextBox Style="{DynamicResource Town}" Text="{Binding Town, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBox Style="{DynamicResource SearchPrice}" Text="{Binding Searchprice, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+            <Border Margin="20 -480 200 0" Panel.ZIndex="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Border Width="580" Background="Transparent" BorderBrush="Transparent">
+                        <ScrollViewer Height="425">
+                            <ListView Grid.Row="1" x:Name="flightList" Background="Transparent" BorderBrush="Transparent">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border CornerRadius="20">
+                                            <Border.Style>
+                                                <Style TargetType="{x:Type Border}">
+                                                    <Setter Property="Background" Value="white" />
+                                                    <Style.Triggers>
+                                                        <Trigger Property="IsMouseOver" Value="True">
+                                                            <Setter Property="Background" Value="#d7ecfd" />
+                                                        </Trigger>
+                                                        <Trigger Property="IsFocused" Value="True">
+                                                            <Setter Property="Background" Value="#d7ecfd" />
+                                                        </Trigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Border.Style>
+                                            <Grid Width="549" Margin="0 10 0 10">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto"/>
+                                                    <RowDefinition Height="Auto"/>
+                                                    <RowDefinition Height="Auto"/>
+                                                </Grid.RowDefinitions>
+                                                <StackPanel Orientation="Horizontal" Grid.Row="0">
+                                                    <TextBlock x:Name="TownFrom" Foreground="#1d89e4" VerticalAlignment="Center" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="20 5 5 5" FontSize="20" Grid.Row="0" Text="{Binding townFrom}" FontFamily="Trebuchet MS"/>
+                                                    <TextBlock Foreground="#1d89e4" VerticalAlignment="Center" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="5 5" FontSize="20" Grid.Row="0" Text="→" FontFamily="Trebuchet MS"/>
+                                                    <TextBlock x:Name="TownTo" Foreground="#1d89e4" VerticalAlignment="Center" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="5 5" FontSize="20" Grid.Row="0" Text="{Binding townTo}" FontFamily="Trebuchet MS"/>
+                                                </StackPanel>
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="0">
+                                                    <TextBlock x:Name="Price" VerticalAlignment="Center" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Right" Margin="5 5" FontSize="25" Grid.Row="0" Text="{Binding price}" FontFamily="Trebuchet MS"/>
+                                                    <TextBlock VerticalAlignment="Center" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Right" Margin="5 5 20 5" FontSize="25" Grid.Row="0" Text="BYN" FontFamily="Trebuchet MS"/>
+                                                </StackPanel>
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Row="1">
+                                                    <TextBlock x:Name="DateFrom" Foreground="#092C52" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="20 5 5 5" FontSize="15" Grid.Row="1" Text="{Binding DATE_FROM}" FontFamily="Trebuchet MS"/>
+                                                    <TextBlock Foreground="#092C52" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="5 5" FontSize="15" Grid.Row="1" Text="—" FontFamily="Trebuchet MS"/>
+                                                    <TextBlock x:Name="DateTo" Foreground="#092C52" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="5 5" FontSize="15" Grid.Row="1" Text="{Binding DATE_TO}" FontFamily="Trebuchet MS"/>
+                                                </StackPanel>
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="1">
+                                                    <TextBlock x:Name="Company" Foreground="#ddd" VerticalAlignment="Center" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Right" Margin="5 5" FontSize="15" Grid.Row="0" Text="{Binding company}" FontFamily="Trebuchet MS"/>
+                                                    <TextBlock Foreground="#ddd" VerticalAlignment="Center" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Right" Margin="5 5" FontSize="15" Grid.Row="0" Text="|" FontFamily="Trebuchet MS"/>
+                                                    <TextBlock x:Name="Class" Foreground="#ddd" VerticalAlignment="Center" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Right" Margin="5 5 0 5" FontSize="15" Grid.Row="0" Text="{Binding clas}" FontFamily="Trebuchet MS"/>
+                                                    <TextBlock Foreground="#ddd" VerticalAlignment="Center" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Right" Margin="0 5 20 5" FontSize="15" Grid.Row="0" Text="-класс" FontFamily="Trebuchet MS"/>
+                                                </StackPanel>
+                                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Row="2">
+                                                    <TextBlock Foreground="#092C52" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="20 5 5 10" FontSize="15" Grid.Row="2" Text="Осталось мест:" FontFamily="Trebuchet MS"/>
+                                                    <TextBlock x:Name="Seats" Foreground="#1d89e4" TextAlignment="Center" Width="Auto" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="5 5 5 10" FontSize="15" Grid.Row="2" Text="{Binding count_of_seats}" FontFamily="Trebuchet MS"/>
+                                                </StackPanel>
+                                            </Grid>
+                                        </Border>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                                <ListView.ItemContainerStyle>
+                                    <Style TargetType="{x:Type ListViewItem}">
+                                        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+                                    </Style>
+                                </ListView.ItemContainerStyle>
+                            </ListView>
+                        </ScrollViewer>
+                    </Border>
+                </Grid>
+            </Border>
+
+            <!--<Grid Margin="5 20 5 0" Height="18" Background="WhiteSmoke" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="130"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Center" Grid.Column="0" Text="Дата вылета"/>
+                <TextBlock HorizontalAlignment="Center" Grid.Column="1" Text="Дата прилета"/>
+                <TextBlock HorizontalAlignment="Center" Grid.Column="2" Text="От куда"/>
+                <TextBlock HorizontalAlignment="Center" Grid.Column="3" Text="Куда"/>
+                <TextBlock HorizontalAlignment="Center" Grid.Column="4" Text="Компания"/>
+                <TextBlock HorizontalAlignment="Center" Grid.Column="5" Text="Стоимость $"/>
+                <TextBlock HorizontalAlignment="Center" Grid.Column="6" Text="Класс"/>
+                <TextBlock HorizontalAlignment="Center" Grid.Column="7" Text="Осталось мест"/>
+            </Grid>
+            <DataGrid HeadersVisibility="None" CanUserAddRows="False" CanUserDeleteRows="False" Margin="5, 0, 5, 5" x:Name="flightList"  Grid.Column="1" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding DATE_FROM}"
+                                    Width="80" IsReadOnly="True"/>
+                    <DataGridTextColumn Binding="{Binding DATE_TO}"
+                                    Width="80" IsReadOnly="True"/>
+                    <DataGridTextColumn Binding="{Binding townFrom}"
+                                    Width="100" IsReadOnly="True"/>
+                    <DataGridTextColumn Binding="{Binding townTo}"
+                                    Width="100" IsReadOnly="True"/>
+                    <DataGridTextColumn Binding="{Binding company}"
+                                    Width="130" IsReadOnly="True"/>
+                    <DataGridTextColumn Binding="{Binding price}"
+                                    Width="100" IsReadOnly="True"/>
+                    <DataGridTextColumn Binding="{Binding clas}"
+                                    Width="100" IsReadOnly="True"/>
+                    <DataGridTextColumn Binding="{Binding count_of_seats}"
+                                    Width="*" IsReadOnly="True"/>
+                </DataGrid.Columns>
+            </DataGrid>-->
+            
+        </StackPanel>
+    </Grid>
+</Page>

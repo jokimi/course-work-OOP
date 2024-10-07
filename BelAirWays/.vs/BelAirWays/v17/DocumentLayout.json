@@ -1,0 +1,329 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|d:\\bstu\\projects\\\u043E\u043E\u043F\\belairways\\belairways\\models\\ticketsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|solutionrelative:belairways\\models\\ticketsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\belairways\\models\\flightsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|solutionrelative:belairways\\models\\flightsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\belairways\\viewmodel\\uservm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|solutionrelative:belairways\\viewmodel\\uservm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\belairways\\view\\userview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|solutionrelative:belairways\\view\\userview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\belairways\\styles\\allflightsstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|solutionrelative:belairways\\styles\\allflightsstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\belairways\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|solutionrelative:belairways\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\belairways\\viewmodel\\flightsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|solutionrelative:belairways\\viewmodel\\flightsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\belairways\\viewmodel\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|solutionrelative:belairways\\viewmodel\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\belairways\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|solutionrelative:belairways\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\belairways\\styles\\tips.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|solutionrelative:belairways\\styles\\tips.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\belairways\\pages\\addairport.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|solutionrelative:belairways\\pages\\addairport.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\belairways\\pages\\addcompany.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|solutionrelative:belairways\\pages\\addcompany.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\belairways\\models\\airportmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|solutionrelative:belairways\\models\\airportmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\belairways\\viewmodel\\routevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|solutionrelative:belairways\\viewmodel\\routevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\belairways\\models\\routemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|solutionrelative:belairways\\models\\routemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\belairways\\pages\\addroute.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|solutionrelative:belairways\\pages\\addroute.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\belairways\\models\\historymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|solutionrelative:belairways\\models\\historymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\belairways\\models\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C3D5E6-8394-48E9-BC31-C0F8BB09B3EA}|BelAirWays\\BelAirWays.csproj|solutionrelative:belairways\\models\\ordermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 17,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Tips.xaml",
+              "DocumentMoniker": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Styles\\Tips.xaml",
+              "RelativeDocumentMoniker": "BelAirWays\\Styles\\Tips.xaml",
+              "ToolTip": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Styles\\Tips.xaml",
+              "RelativeToolTip": "BelAirWays\\Styles\\Tips.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-26T14:55:49.113Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserView.xaml.cs",
+              "DocumentMoniker": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\View\\UserView.xaml.cs",
+              "RelativeDocumentMoniker": "BelAirWays\\View\\UserView.xaml.cs",
+              "ToolTip": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\View\\UserView.xaml.cs",
+              "RelativeToolTip": "BelAirWays\\View\\UserView.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T21:31:45.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AllFlightsStyles.xaml",
+              "DocumentMoniker": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Styles\\AllFlightsStyles.xaml",
+              "RelativeDocumentMoniker": "BelAirWays\\Styles\\AllFlightsStyles.xaml",
+              "ToolTip": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Styles\\AllFlightsStyles.xaml",
+              "RelativeToolTip": "BelAirWays\\Styles\\AllFlightsStyles.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-10T21:31:39.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserVM.cs",
+              "DocumentMoniker": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\ViewModel\\UserVM.cs",
+              "RelativeDocumentMoniker": "BelAirWays\\ViewModel\\UserVM.cs",
+              "ToolTip": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\ViewModel\\UserVM.cs",
+              "RelativeToolTip": "BelAirWays\\ViewModel\\UserVM.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwEQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T21:30:08.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FlightsVM.cs",
+              "DocumentMoniker": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\ViewModel\\FlightsVM.cs",
+              "RelativeDocumentMoniker": "BelAirWays\\ViewModel\\FlightsVM.cs",
+              "ToolTip": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\ViewModel\\FlightsVM.cs",
+              "RelativeToolTip": "BelAirWays\\ViewModel\\FlightsVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T21:27:16.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\App.xaml.cs",
+              "RelativeDocumentMoniker": "BelAirWays\\App.xaml.cs",
+              "ToolTip": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\App.xaml.cs",
+              "RelativeToolTip": "BelAirWays\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T20:31:30.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\App.xaml",
+              "RelativeDocumentMoniker": "BelAirWays\\App.xaml",
+              "ToolTip": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\App.xaml",
+              "RelativeToolTip": "BelAirWays\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-10T20:31:26.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginVM.cs",
+              "DocumentMoniker": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\ViewModel\\LoginVM.cs",
+              "RelativeDocumentMoniker": "BelAirWays\\ViewModel\\LoginVM.cs",
+              "ToolTip": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\ViewModel\\LoginVM.cs",
+              "RelativeToolTip": "BelAirWays\\ViewModel\\LoginVM.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwEcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T20:19:57.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FlightsModel.cs",
+              "DocumentMoniker": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Models\\FlightsModel.cs",
+              "RelativeDocumentMoniker": "BelAirWays\\Models\\FlightsModel.cs",
+              "ToolTip": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Models\\FlightsModel.cs",
+              "RelativeToolTip": "BelAirWays\\Models\\FlightsModel.cs",
+              "ViewState": "AgIAAIkBAAAAAAAAAAAAAMcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T10:08:32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AirportModel.cs",
+              "DocumentMoniker": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Models\\AirportModel.cs",
+              "RelativeDocumentMoniker": "BelAirWays\\Models\\AirportModel.cs",
+              "ToolTip": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Models\\AirportModel.cs",
+              "RelativeToolTip": "BelAirWays\\Models\\AirportModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T09:56:05.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RouteVM.cs",
+              "DocumentMoniker": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\ViewModel\\RouteVM.cs",
+              "RelativeDocumentMoniker": "BelAirWays\\ViewModel\\RouteVM.cs",
+              "ToolTip": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\ViewModel\\RouteVM.cs",
+              "RelativeToolTip": "BelAirWays\\ViewModel\\RouteVM.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAmwCwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T09:55:16.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddRoute.xaml",
+              "DocumentMoniker": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Pages\\AddRoute.xaml",
+              "RelativeDocumentMoniker": "BelAirWays\\Pages\\AddRoute.xaml",
+              "ToolTip": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Pages\\AddRoute.xaml",
+              "RelativeToolTip": "BelAirWays\\Pages\\AddRoute.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-17T09:54:29.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RouteModel.cs",
+              "DocumentMoniker": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Models\\RouteModel.cs",
+              "RelativeDocumentMoniker": "BelAirWays\\Models\\RouteModel.cs",
+              "ToolTip": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Models\\RouteModel.cs",
+              "RelativeToolTip": "BelAirWays\\Models\\RouteModel.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAiwJEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T09:49:22.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HistoryModel.cs",
+              "DocumentMoniker": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Models\\HistoryModel.cs",
+              "RelativeDocumentMoniker": "BelAirWays\\Models\\HistoryModel.cs",
+              "ToolTip": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Models\\HistoryModel.cs",
+              "RelativeToolTip": "BelAirWays\\Models\\HistoryModel.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAUwF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T09:38:42.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OrderModel.cs",
+              "DocumentMoniker": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Models\\OrderModel.cs",
+              "RelativeDocumentMoniker": "BelAirWays\\Models\\OrderModel.cs",
+              "ToolTip": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Models\\OrderModel.cs",
+              "RelativeToolTip": "BelAirWays\\Models\\OrderModel.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T09:38:24.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TicketsModel.cs",
+              "DocumentMoniker": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Models\\TicketsModel.cs",
+              "RelativeDocumentMoniker": "BelAirWays\\Models\\TicketsModel.cs",
+              "ToolTip": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Models\\TicketsModel.cs",
+              "RelativeToolTip": "BelAirWays\\Models\\TicketsModel.cs",
+              "ViewState": "AgIAACYCAAAAAAAAAAAQwGgBAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T09:37:54.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddCompany.xaml",
+              "DocumentMoniker": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Pages\\AddCompany.xaml",
+              "RelativeDocumentMoniker": "BelAirWays\\Pages\\AddCompany.xaml",
+              "ToolTip": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Pages\\AddCompany.xaml",
+              "RelativeToolTip": "BelAirWays\\Pages\\AddCompany.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-16T15:46:31.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddAirport.xaml",
+              "DocumentMoniker": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Pages\\AddAirport.xaml",
+              "RelativeDocumentMoniker": "BelAirWays\\Pages\\AddAirport.xaml",
+              "ToolTip": "D:\\BSTU\\Projects\\\u041E\u041E\u041F\\BelAirWays\\BelAirWays\\Pages\\AddAirport.xaml",
+              "RelativeToolTip": "BelAirWays\\Pages\\AddAirport.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-15T10:33:06.549Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

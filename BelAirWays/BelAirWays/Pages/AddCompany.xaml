@@ -1,0 +1,23 @@
+﻿<Page x:Class="BelAirWays.Pages.AddCompanyForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BelAirWays.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddCompanyForm">
+
+    <Grid Margin="201.5 30">
+        <Border CornerRadius="20" BorderBrush="White" BorderThickness="1" Panel.ZIndex="2" Background="White">
+            <StackPanel Style="{DynamicResource Panel}" DataContext="{Binding Models}" Panel.ZIndex="1" Background="{x:Null}" Height="390">
+                <TextBlock Style="{DynamicResource AddCompanyWord}" Width="300" Margin="0,20,0,0" FontSize="25" FontFamily="Trebuchet MS" TextAlignment="Center">Добавление компании</TextBlock>
+                <TextBox Style="{DynamicResource NameCompany}" Text="{Binding company_name, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBox Style="{DynamicResource cost_of_1km}" Text="{Binding cost_of_1km, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBox Style="{DynamicResource cost_of_business}" Text="{Binding cost_of_business, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBox Style="{DynamicResource cost_of_econom}" Text="{Binding cost_of_econom, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+        </Border>
+        <Button Style="{DynamicResource AddCompany}" Command="{Binding AddCompany}" Panel.ZIndex="3"/>
+    </Grid>
+</Page>
